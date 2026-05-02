@@ -22,7 +22,7 @@ A stunning, modern, dark-themed portfolio website built with React, TypeScript, 
 ---
 
 <div align="center">
-  <img src="docs/screenshots/hero-banner.png" alt="Portfolio Hero Section" width="100%" />
+  <img src="docs/screenshots/hero-section.png" alt="Portfolio Hero Section — Aditya Yadav" width="100%" />
 </div>
 
 ---
@@ -62,24 +62,38 @@ A stunning, modern, dark-themed portfolio website built with React, TypeScript, 
 
 <div align="center">
 
-### Hero Section
-> Large typographic name reveal with parallax background, magnetic social links, and a grayscale-to-color profile photo hover effect.
+### 🏠 Hero Section
+> Cinematic name reveal with parallax text, magnetic social links, 3D particle swarm, and a grayscale-to-color profile photo on hover.
 
-<img src="docs/screenshots/hero-banner.png" alt="Hero Section" width="90%" />
-
----
-
-### Featured Projects
-> Interactive 3D tilt cards with technology tags, GitHub links, and smooth stagger animations.
-
-<img src="docs/screenshots/projects-section.png" alt="Projects Section" width="90%" />
+<img src="docs/screenshots/hero-section.png" alt="Hero Section" width="90%" />
 
 ---
 
-### Skills & Services
-> Categorized skill grid with hover-to-glow cards and a structured services panel with numbered entries.
+### 👤 About & Intro
+> Bold intro statement highlighting AI/ML expertise, with a "See my Work" CTA and glassmorphic card design.
 
-<img src="docs/screenshots/skills-services.png" alt="Skills & Services" width="90%" />
+<img src="docs/screenshots/about-intro.png" alt="About & Intro Section" width="90%" />
+
+---
+
+### 🎓 Education & Achievements
+> Academic journey timeline (MCA AI/ML → BCA → Senior Secondary) alongside hackathon recognitions with trophy badges.
+
+<img src="docs/screenshots/education-achievements.png" alt="Education & Achievements" width="90%" />
+
+---
+
+### 💼 Professional Experience
+> Timeline-based experience cards with role details, company info, bullet-point highlights, and technology tags.
+
+<img src="docs/screenshots/experience.png" alt="Experience Section" width="90%" />
+
+---
+
+### 🧠 Technical Skills
+> Six-category skill grid covering Programming, Web, AI/ML, Databases, Cloud/DevOps, and Creative/GenAI tools.
+
+<img src="docs/screenshots/skills.png" alt="Skills Section" width="90%" />
 
 </div>
 
