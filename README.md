@@ -1,73 +1,301 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# 🚀 Aditya Yadav — Portfolio Website
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+### **AI & Machine Learning Engineer | Full Stack Developer**
 
-## How can I edit this code?
+A stunning, modern, dark-themed portfolio website built with React, TypeScript, and cutting-edge web technologies — featuring 3D WebGL particle effects, Framer Motion animations, and a premium glassmorphic design system.
 
-There are several ways of editing your application.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-F97316?style=for-the-badge&logo=netlify&logoColor=white)](https://adityacodes.netlify.app)
+[![GitHub](https://img.shields.io/badge/GitHub-AdityaYad12047-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AdityaYad12047)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aditya_Yadav-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-y-7644961aa/)
 
-**Use Lovable**
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-0.164-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.x-0055FF?style=flat-square&logo=framer&logoColor=white)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+</div>
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+<div align="center">
+  <img src="docs/screenshots/hero-banner.png" alt="Portfolio Hero Section" width="100%" />
+</div>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Features
 
-Follow these steps:
+<table>
+<tr>
+<td width="50%">
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🎨 Design & UI
+- **Dark-mode glassmorphic** design system
+- **Coral-orange** `#F97316` accent branding
+- **Responsive** — mobile-first, works on all devices
+- **Custom cursor** with interactive tracking
+- **Scroll progress** indicator
+- **Ambient gradient orbs** for visual depth
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+</td>
+<td width="50%">
 
-# Step 3: Install the necessary dependencies.
-npm i
+### ⚡ Interactions & Animations
+- **3D WebGL particle swarm** — ambient background
+- **Framer Motion** slide-in, scale, stagger animations
+- **Magnetic hover** effects on buttons & social links
+- **3D tilt cards** on featured projects
+- **Parallax text** on hero section
+- **Text reveal** word-by-word animation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+</td>
+</tr>
+</table>
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+### Hero Section
+> Large typographic name reveal with parallax background, magnetic social links, and a grayscale-to-color profile photo hover effect.
+
+<img src="docs/screenshots/hero-banner.png" alt="Hero Section" width="90%" />
+
+---
+
+### Featured Projects
+> Interactive 3D tilt cards with technology tags, GitHub links, and smooth stagger animations.
+
+<img src="docs/screenshots/projects-section.png" alt="Projects Section" width="90%" />
+
+---
+
+### Skills & Services
+> Categorized skill grid with hover-to-glow cards and a structured services panel with numbered entries.
+
+<img src="docs/screenshots/skills-services.png" alt="Skills & Services" width="90%" />
+
+</div>
+
+---
+
+## 🏗️ Architecture
+
+```
+src/
+├── components/
+│   ├── Navbar.tsx              # Sticky nav with scroll-aware backdrop blur
+│   ├── HeroSection.tsx         # Animated name reveal + parallax + profile
+│   ├── AboutSection.tsx        # Education, achievements, intro card
+│   ├── ExperienceSection.tsx   # Timeline with company details & tech tags
+│   ├── SkillsSection.tsx       # 6-category skill grid (30+ skills)
+│   ├── ProjectsSection.tsx     # Featured cards + "More Projects" table
+│   ├── ServicesSection.tsx     # 6 numbered services with feature lists
+│   ├── CertificationsSection.tsx # Badges + credential table
+│   ├── ContactSection.tsx      # Working form (FormSubmit) + social links
+│   ├── Footer.tsx              # Copyright + scroll-to-top
+│   └── ui/
+│       ├── InteractiveEffects.tsx  # Magnetic, TiltCard, TextReveal, Parallax
+│       ├── WebcracySwarm.jsx      # 3D WebGL particle system (Three.js)
+│       ├── CustomCursor.tsx       # Custom animated cursor
+│       ├── ScrollProgress.tsx     # Top scroll progress bar
+│       ├── motion-wrapper.tsx     # Framer Motion reusable wrappers
+│       └── ... (shadcn/ui components)
+├── pages/
+│   ├── Index.tsx               # Main page — assembles all sections
+│   └── NotFound.tsx            # 404 page
+├── hooks/
+│   └── use-toast.ts            # Toast notification hook
+└── assets/
+    └── profile-photo.jpg       # Profile photograph
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| **Frontend Framework** | React 18 + TypeScript |
+| **Build Tool** | Vite 7 (SWC) |
+| **Styling** | TailwindCSS 3.4 + custom CSS design tokens |
+| **Animations** | Framer Motion 11 |
+| **3D Graphics** | Three.js + React Three Fiber + Drei |
+| **UI Components** | shadcn/ui + Radix Primitives |
+| **Form Handling** | React Hook Form + Zod validation |
+| **Contact Backend** | FormSubmit.co (zero-config email API) |
+| **Icons** | Lucide React |
+| **Routing** | React Router DOM v6 |
+| **Testing** | Vitest + Testing Library |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** ≥ 18
+- **npm** ≥ 9 (or bun)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/AdityaYad12047/Portfolio-Website.git
+
+# Navigate to the project
+cd Portfolio-Website
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+# Create optimized production build
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview the production build
+npm run preview
+```
 
-## What technologies are used for this project?
+### Run Tests
 
-This project is built with:
+```bash
+# Run tests once
+npm test
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Run tests in watch mode
+npm run test:watch
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📂 Sections
 
-## Can I connect a custom domain to my Lovable project?
+| Section | Description |
+|---|---|
+| **🏠 Hero** | Animated name reveal, parallax text, magnetic social links, grayscale-to-color profile photo |
+| **👤 About** | Intro statement, education timeline (MCA AI/ML @ UPES, BCA @ Galgotias), hackathon achievements |
+| **💼 Experience** | Professional timeline — Cognifyz, British Airways, Freelance, Hamari Pahchan NGO |
+| **🧠 Skills** | 6 categories, 30+ technologies — Python, React, TensorFlow, LangChain, AWS, Docker, etc. |
+| **🔬 Projects** | 8 projects — DID Auth System, MedAI, AI Story Generator, Heart Rate Detection, and more |
+| **⚙️ Services** | 6 offerings — AI/ML Solutions, GenAI Apps, Full Stack Dev, Analytics, APIs, Computer Vision |
+| **📜 Certifications** | Stanford IoT, GCP ML APIs, GSSoC badges, Cybersecurity, and more |
+| **📬 Contact** | Working contact form (FormSubmit), email, phone, availability status, GitHub & LinkedIn |
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🎯 Featured Projects
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+<table>
+<tr>
+<td width="50%">
+
+### 🔐 DID Authentication System
+> Decentralized Identity with AI fraud detection using blockchain (Solidity), wallet-based auth, and Random Forest ML.
+
+`Node.js` `Flask` `Solidity` `React` `Random Forest`
+
+</td>
+<td width="50%">
+
+### 🏥 MedAI — Diagnostic Engine
+> Multi-modal healthcare AI combining vitals, imaging, PDFs, and clinical text for ICU risk prediction.
+
+`Python` `TensorFlow` `OpenCV` `NLP` `Flask`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎬 AI Story Generator
+> Automated AI video pipeline using GPT narratives, MidJourney visuals, and ElevenLabs voiceovers.
+
+`GPT API` `MidJourney` `ElevenLabs` `Python`
+
+</td>
+<td width="50%">
+
+### ❤️ Heart Rate & Emotion Detection
+> Real-time biometric and emotion detection with TensorFlow, OpenCV, and GUI visualization.
+
+`TensorFlow` `OpenCV` `Python` `Deep Learning`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🌐 Deployment
+
+This project is deployed on **Netlify** with continuous deployment from the `main` branch.
+
+| Platform | Status |
+|---|---|
+| **Netlify** | [![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://adityacodes.netlify.app) |
+
+### Deploy Your Own
+
+1. Fork this repository
+2. Connect to [Netlify](https://netlify.com) / [Vercel](https://vercel.com)
+3. Set build command: `npm run build`
+4. Set publish directory: `dist`
+5. Deploy! 🎉
+
+---
+
+## 🎨 Design System
+
+The portfolio uses a carefully crafted dark-mode design system:
+
+```css
+/* Core Color Palette */
+--background:    #0a0a0a    /* Near-black background */
+--foreground:    #fafafa    /* Light text */
+--primary:       #F97316    /* Coral-orange accent */
+--card:          #0a0a0a    /* Card backgrounds */
+--muted:         #262626    /* Muted elements */
+--border:        #262626    /* Subtle borders */
+```
+
+**Typography**: `font-display` for headings, system stack for body text  
+**Spacing**: 8px grid system with generous `py-24` section padding  
+**Borders**: 1px subtle borders with primary-glow hover states  
+**Cards**: `.card-dark` glassmorphic containers with hover elevation
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+### Built with 🧡 by Aditya Yadav
+
+**AI & Machine Learning Engineer | Full Stack Developer**
+
+[![Email](https://img.shields.io/badge/Email-aditya.12047@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aditya.12047@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-AdityaYad12047-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AdityaYad12047)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-y-7644961aa/)
+
+⭐ **Star this repo if you found it useful!** ⭐
+
+</div>

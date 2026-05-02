@@ -67,7 +67,7 @@ export const HeroSection = () => {
       <StaggerContainer delayChildren={0.8} staggerChildren={0.1} className="fixed left-8 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-4 z-50">
         {[
           { icon: Github, href: "https://github.com/AdityaYad12047", label: "GitHub" },
-          { icon: Linkedin, href: "https://www.linkedin.com/in/aditya-yadav-7644961aa/", label: "LinkedIn" },
+          { icon: Linkedin, href: "https://www.linkedin.com/in/aditya-y-7644961aa/", label: "LinkedIn" },
           { icon: Mail, href: "mailto:aditya.12047@gmail.com", label: "Email" },
         ].map((social, index) => (
           <StaggerItem key={index}>

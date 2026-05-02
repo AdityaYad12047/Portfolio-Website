@@ -40,15 +40,39 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/aditya.12047@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New portfolio message from ${formData.name}`,
+        }),
+      });
 
-    toast({
-      title: "Message sent! ✨",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
+      if (response.ok) {
+        toast({
+          title: "Message sent! ✨",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -112,7 +136,7 @@ export const ContactSection = () => {
                 <h3 className="font-display text-xl font-semibold mb-6">Connect With Me</h3>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/AdityaYad12047"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-6 py-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all hover:scale-105 hover:shadow-lg"
@@ -121,7 +145,7 @@ export const ContactSection = () => {
                     <span className="font-medium">GitHub</span>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/aditya-y-7644961aa/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-6 py-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all hover:scale-105 hover:shadow-lg"

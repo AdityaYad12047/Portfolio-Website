@@ -5,12 +5,31 @@ import { TiltCard } from "./ui/InteractiveEffects";
 
 const projects = [
   {
-    year: "2024",
+    year: "2026",
+    title: "Decentralized Identity (DID) Authentication System with AI Fraud Detection",
+    description:
+      "Architected a multi-tier distributed system with wallet-based DID authentication, on-chain DID storage, and real-time fraud detection using Random Forest.",
+    technologies: ["Node.js", "Flask", "Solidity", "React", "Random Forest"],
+    featured: true,
+    github: "https://github.com/AdityaYad12047",
+  },
+  {
+    year: "2025",
     title: "MedAI – Multi-Modal Diagnostic Engine",
     description:
       "AI-driven healthcare system combining vitals, imaging, PDFs, and clinical text using ML models and multimodal AI for ICU risk prediction.",
     technologies: ["Python", "TensorFlow", "OpenCV", "NLP", "Flask"],
     featured: true,
+    github: "https://github.com/AdityaYad12047/MED-AI-diagnostic-engine",
+  },
+  {
+    year: "2025",
+    title: "AI Story Generator System",
+    description:
+      "Automated AI story video generation pipeline using GPT for narrative, MidJourney for imagery, and AI voiceovers.",
+    technologies: ["GPT API", "MidJourney", "ElevenLabs", "Python"],
+    featured: true,
+    github: "https://github.com/AdityaYad12047/ai-growth-launchpad",
   },
   {
     year: "2024",
@@ -19,14 +38,7 @@ const projects = [
       "Real-time biometric and emotion detection system using TensorFlow, OpenCV, and GUI visualization for health monitoring.",
     technologies: ["TensorFlow", "OpenCV", "Python", "Deep Learning"],
     featured: true,
-  },
-  {
-    year: "2024",
-    title: "AI Story Generator System",
-    description:
-      "Automated AI story video generation pipeline using GPT for narrative, MidJourney for imagery, and AI voiceovers.",
-    technologies: ["GPT API", "MidJourney", "ElevenLabs", "Python"],
-    featured: true,
+    github: "https://github.com/AdityaYad12047/heart-rate-emotion-detector",
   },
   {
     year: "2023",
@@ -70,7 +82,7 @@ export const ProjectsSection = () => {
             <span className="text-primary">//</span>
             <span className="section-label">Portfolio</span>
           </div>
-          
+
           <h2 className="font-display text-3xl md:text-4xl font-semibold mb-12">
             Featured Projects
           </h2>
@@ -109,9 +121,20 @@ export const ProjectsSection = () => {
                   </div>
 
                   <div className="flex gap-3 relative z-10">
-                    <Button variant="outline" size="sm" className="rounded-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="rounded-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors"
+                      asChild
+                    >
+                      <a
+                        href={project.github || "https://github.com/AdityaYad12047"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
                     <Button size="sm" className="rounded-full bg-secondary text-secondary-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                       <ExternalLink className="h-4 w-4 mr-2" />
